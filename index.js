@@ -1,6 +1,6 @@
 // code your solution here
 
-const superBowlWin = record => {
-record.find(element.year => element.result === "W");
-
+function superbowlWin(record) {
+  const winningSeason = record.find(({ result }) => result === "W");
+  return winningSeason ? winningSeason.year : undefined;
 }
